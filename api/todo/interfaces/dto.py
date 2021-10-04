@@ -3,7 +3,7 @@ from rest_framework import serializers
 from api.subtask.interfaces.dto import SubtaskDTOSerializer
 from api.todo.model import Todo
 
-class TodoDTOSerializer(serializers.ModelSerializer):
+class TodoDTO(serializers.ModelSerializer):
     subtasks = SubtaskDTOSerializer(many=True, read_only=True)
 
     class Meta:

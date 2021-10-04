@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from api.subtask.model import Subtask
 
-class SubtaskDTOSerializer(serializers.ModelSerializer):
+class SubtaskDTO(serializers.ModelSerializer):
     class Meta:
         model = Subtask
         fields = [
