@@ -43,4 +43,4 @@ class SubtaskDetail(viewsets.ModelViewSet):
                 else:
                     return response.Response(todoDAO.errors, status=500)
 
-        return response.Response()
+        return response.Response(request.data, status=200)
